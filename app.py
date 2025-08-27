@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, send_file
 import google.generativeai as genai
 
 app = Flask(__name__)
-genai.configure(api_key="AIzaSyAdc8noP6fnJy1R6iZSw0uGxcmp5ZUP3LY")
+genai.configure(api_key="GOOGLE_API_KEY")
 
 def chat_with_gemini(history, retries=3):
     model = genai.GenerativeModel("gemini-2.5-flash")
